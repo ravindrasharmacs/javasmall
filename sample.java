@@ -1,10 +1,7 @@
 public class sample {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("Sum of 2 and 3 is :::"+add(2, 3));
+        Sum sumInstance = new Sum();
+        int result = sumInstance.addTwoNumbers(5, 3);
+        System.out.println("The sum is: " + result);
     }
-
-    public static int add(int a, int b) {
-        return a + b;
-        }
 }
